@@ -1,0 +1,572 @@
+{
+  "name": "@pixi-essentials/svg",
+  "entries": [
+    {
+      "version": "2.0.2",
+      "tag": "@pixi-essentials/svg_v2.0.2",
+      "date": "Sun, 05 Mar 2023 04:30:27 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix errors in PixiJS 7 type-check"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.0.1",
+      "tag": "@pixi-essentials/svg_v2.0.1",
+      "date": "Sun, 05 Mar 2023 03:31:22 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Proper destruction of SVGScene content when destroy() is called to avoid memory leaks. (thanks @DanoTheNerd)"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@pixi-essentials/gradients\" from `^1.0.0` to `^1.0.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.0.0",
+      "tag": "@pixi-essentials/svg_v2.0.0",
+      "date": "Sun, 05 Mar 2023 03:28:18 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Upgrade to PixiJS 7"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@pixi-essentials/gradients\" from `^0.0.5` to `^1.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"@pixi-essentials/cull\" from `^1.1.0` to `^2.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"@pixi-essentials/texture-allocator\" from `~1.0.9` to `~2.0.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.7",
+      "tag": "@pixi-essentials/svg_v1.1.7",
+      "date": "Wed, 09 Mar 2022 03:58:56 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@pixi-essentials/gradients\" from `^0.0.4` to `^0.0.5`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.6",
+      "tag": "@pixi-essentials/svg_v1.1.6",
+      "date": "Sun, 11 Jul 2021 20:57:07 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix SVGTextNode bounds not updating after the text renders."
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.5",
+      "tag": "@pixi-essentials/svg_v1.1.5",
+      "date": "Sun, 11 Jul 2021 02:39:04 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix SVGTextNode shifting upwards when you re-embed a text element. This only pops when manipulating the scene tree manually."
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.4",
+      "tag": "@pixi-essentials/svg_v1.1.4",
+      "date": "Sat, 10 Jul 2021 23:35:25 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix error when <text /> element does not have (x, y) attributes"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.3",
+      "tag": "@pixi-essentials/svg_v1.1.3",
+      "date": "Sat, 10 Jul 2021 23:20:42 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix SVGTextNode not respecting (x, y) attributes of <text /> elements."
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.2",
+      "tag": "@pixi-essentials/svg_v1.1.2",
+      "date": "Sun, 20 Jun 2021 02:05:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add support for external hrefs in SVG use elements"
+          },
+          {
+            "comment": "Fix issues with dash-array in stroked geometries"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.1",
+      "tag": "@pixi-essentials/svg_v1.1.1",
+      "date": "Thu, 17 Jun 2021 02:36:40 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@pixi-essentials/gradients\" from `^0.0.3` to `^0.0.4`"
+          },
+          {
+            "comment": "Updating dependency \"@pixi-essentials/texture-allocator\" from `~1.0.4` to `~1.0.5`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.0",
+      "tag": "@pixi-essentials/svg_v1.1.0",
+      "date": "Sun, 28 Mar 2021 17:05:18 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Upgrade to PixiJS 6"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.7",
+      "tag": "@pixi-essentials/svg_v1.0.7",
+      "date": "Sat, 27 Feb 2021 19:23:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add proper hit-testing support for paths, in SVGPathNode."
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.5",
+      "tag": "@pixi-essentials/svg_v1.0.5",
+      "date": "Tue, 16 Feb 2021 00:55:07 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix build regression for the UMD variant."
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.4",
+      "tag": "@pixi-essentials/svg_v1.0.4",
+      "date": "Tue, 16 Feb 2021 00:41:50 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix no-stroke when color is #000 but stroke-width not explicitly specified. Fix error with url(#id) fill gradient references (without the single quotes, i.e. url('#id')"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.3",
+      "tag": "@pixi-essentials/svg_v1.0.3",
+      "date": "Sun, 31 Jan 2021 04:22:28 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix incorrect reference to @pixi/filter-color-matrix in browser build"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.2",
+      "tag": "@pixi-essentials/svg_v1.0.2",
+      "date": "Sun, 31 Jan 2021 04:07:26 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix dependency namespaces in browser build"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.1",
+      "tag": "@pixi-essentials/svg_v1.0.1",
+      "date": "Sun, 31 Jan 2021 03:42:33 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgrade build to fix wrong namespace in dependencies (gradients and texture-allocator)"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@pixi-essentials/gradients\" from `^0.0.2` to `^0.0.3`"
+          },
+          {
+            "comment": "Updating dependency \"@pixi-essentials/texture-allocator\" from `~1.0.3` to `~1.0.4`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.2.5",
+      "tag": "@pixi-essentials/svg_v0.2.5",
+      "date": "Sat, 02 Jan 2021 00:21:47 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Remove redundant logs in SVGTextEngineImpl"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.2.3",
+      "tag": "@pixi-essentials/svg_v0.2.3",
+      "date": "Sat, 26 Dec 2020 22:47:29 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgrade to PixiJS 5.4.0 RC and generate a index.d.ts file."
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@pixi-essentials/gradients\" from `^0.0.1` to `^0.0.2`"
+          },
+          {
+            "comment": "Updating dependency \"@pixi-essentials/cull\" from `^1.0.9` to `^1.0.10`"
+          },
+          {
+            "comment": "Updating dependency \"@pixi-essentials/texture-allocator\" from `~1.0.2` to `~1.0.3`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.2.2",
+      "tag": "@pixi-essentials/svg_v0.2.2",
+      "date": "Sat, 19 Dec 2020 18:41:11 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix spikes in stroking of smaller subpaths; add support for &lt;ellipse /&gt; elements."
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.2.1",
+      "tag": "@pixi-essentials/svg_v0.2.1",
+      "date": "Sun, 13 Dec 2020 19:25:27 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix bounds calculation of SVGScene when applying custom width and height."
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.2.0",
+      "tag": "@pixi-essentials/svg_v0.2.0",
+      "date": "Sat, 05 Dec 2020 19:57:34 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Fix text layout algorithm by making it recursive, so it will work on nested &lt;tspan /&gt; elements. Add proper support for s/S smooth cubic bezier path commands, instead of treating them as quadratic bezier curves."
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.1.1",
+      "tag": "@pixi-essentials/svg_v0.1.1",
+      "date": "Sun, 29 Nov 2020 20:04:09 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix incorrect current point after closepath command"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.20",
+      "tag": "@pixi-essentials/svg_v0.0.20",
+      "date": "Sat, 14 Nov 2020 19:53:46 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix bug when smooth quadratic command was used after relative command"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.19",
+      "tag": "@pixi-essentials/svg_v0.0.19",
+      "date": "Sat, 14 Nov 2020 19:44:14 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Support opacity on SVG images"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.18",
+      "tag": "@pixi-essentials/svg_v0.0.18",
+      "date": "Sat, 14 Nov 2020 19:14:09 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add support for smooth quadratic bezier curve commands (t, T)"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.17",
+      "tag": "@pixi-essentials/svg_v0.0.17",
+      "date": "Sun, 08 Nov 2020 20:40:57 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add SVGSceneContext, sharing a texture atlas amongst SVGImageNodes"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@pixi-essentials/texture-allocator\" from `~1.0.0` to `~1.0.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.16",
+      "tag": "@pixi-essentials/svg_v0.0.16",
+      "date": "Sat, 17 Oct 2020 19:45:36 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fixes bug where <tspan /> attributes where not being applied"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.15",
+      "tag": "@pixi-essentials/svg_v0.0.15",
+      "date": "Sat, 17 Oct 2020 19:38:34 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Build last release"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.14",
+      "tag": "@pixi-essentials/svg_v0.0.14",
+      "date": "Sat, 17 Oct 2020 19:30:26 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Set default font size to 16"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.13",
+      "tag": "@pixi-essentials/svg_v0.0.13",
+      "date": "Sat, 17 Oct 2020 19:19:14 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Letter spacing fix for <tspan />"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.12",
+      "tag": "@pixi-essentials/svg_v0.0.12",
+      "date": "Sat, 17 Oct 2020 19:12:54 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "N/A"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.11",
+      "tag": "@pixi-essentials/svg_v0.0.11",
+      "date": "Sat, 17 Oct 2020 19:07:48 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Build last release :), and fallback to letter spacing of <text /> for <tspan /> elements, if not provided"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.10",
+      "tag": "@pixi-essentials/svg_v0.0.10",
+      "date": "Sat, 17 Oct 2020 18:36:10 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add letterSpacing in the style passed by SVGTextNode."
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.9",
+      "tag": "@pixi-essentials/svg_v0.0.9",
+      "date": "Wed, 14 Oct 2020 21:17:15 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Emit transformdirty event when SVGScene has transform invalidations."
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.8",
+      "tag": "@pixi-essentials/svg_v0.0.8",
+      "date": "Wed, 07 Oct 2020 21:43:57 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Use populateScene instead of populateSceneRecursive to build scene graph at root."
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.7",
+      "tag": "@pixi-essentials/svg_v0.0.7",
+      "date": "Wed, 07 Oct 2020 01:28:54 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Texture-size optimizations for image nodes and linear-gradient paint servers"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.6",
+      "tag": "@pixi-essentials/svg_v0.0.6",
+      "date": "Tue, 06 Oct 2020 19:09:58 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Set _transformDirty to false after updating transform. Invoke updateTransform after updateText in SVGTextEngineImpl"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.5",
+      "tag": "@pixi-essentials/svg_v0.0.5",
+      "date": "Tue, 06 Oct 2020 18:57:40 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add nodetransformdirty events to allow transform invalidation internally."
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.4",
+      "tag": "@pixi-essentials/svg_v0.0.4",
+      "date": "Tue, 06 Oct 2020 18:38:01 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Internal culling optimization in SVGScene, lazy transform & bounds updates."
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.3",
+      "tag": "@pixi-essentials/svg_v0.0.3",
+      "date": "Mon, 05 Oct 2020 16:11:24 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Async-pattern for SVGTextEngine"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.2",
+      "tag": "@pixi-essentials/svg_v0.0.2",
+      "date": "Sun, 04 Oct 2020 23:25:53 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Export the Paint API and additional SVG nodes"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.1",
+      "tag": "@pixi-essentials/svg_v0.0.1",
+      "date": "Sat, 03 Oct 2020 01:37:43 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "First release candidate"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@pixi-essentials/gradients\" from `^0.0.1-alpha.0` to `^0.0.1`"
+          }
+        ]
+      }
+    }
+  ]
+}
