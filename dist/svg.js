@@ -2,7 +2,7 @@
  
 /*!
  * @pixi-essentials/svg - v2.0.2
- * Compiled Mon, 10 Jul 2023 02:56:14 UTC
+ * Compiled Wed, 22 Mar 2023 02:44:57 UTC
  *
  * @pixi-essentials/svg is licensed under the MIT License.
  * http://www.opensource.org/licenses/mit-license
@@ -501,7 +501,7 @@ this.PIXI = this.PIXI || {};
      * @ignore
      * @public
      */
-     
+
 
     /**
      * The fill rules supported by {@link Path}.
@@ -3493,6 +3493,7 @@ this.PIXI = this.PIXI || {};
             const paint = basePaint ? new InheritedPaintProvider(basePaint, this.queryPaint(element)) : this.queryPaint(element);
             const {
                 fill,
+                fillOpacity,
                 opacity,
                 stroke,
                 strokeDashArray,
@@ -3509,6 +3510,8 @@ this.PIXI = this.PIXI || {};
 
             let opacityVal = opacity === null ? 1 : opacity;
 
+            let fillOpacityVal = fillOpacity === null ? 1 : fillOpacity;
+
             if (node instanceof SVGGraphicsNode)
             {
                 if (fill === 'none')
@@ -3517,11 +3520,11 @@ this.PIXI = this.PIXI || {};
                 }
                 else if (typeof fill === 'number')
                 {
-                    node.beginFill(fill, opacityVal);
+                    node.beginFill(fill, fillOpacityVal * opacityVal);
                 }
                 else if (!fill)
                 {
-                    node.beginFill(0, opacityVal);
+                    node.beginFill(0, fillOpacityVal * opacityVal);
                 }
                 else
                 {
@@ -3536,7 +3539,7 @@ this.PIXI = this.PIXI || {};
                         node.paintServers.push(paintServer);
                         node.beginTextureFill({
                             texture: paintTexture,
-                            alpha: opacityVal,
+                            alpha: fillOpacityVal * opacityVal,
                             matrix: new math.Matrix(),
                         });
                     }
